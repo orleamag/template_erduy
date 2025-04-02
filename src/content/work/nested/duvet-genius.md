@@ -1,22 +1,27 @@
 ---
-title: Duvet Genius
-publishDate: 2020-03-04 00:00:00
-img: /assets/stock-3.jpg
-img_alt: Pearls of silky soft white cotton, bubble up under vibrant lighting
+title: Sensibilidad Química Múltiple
+publishDate: 2017-08-01 00:00:00
+img: /assets/sensibilidadQuimicaMultiple.png
+img_alt: Síndrome químico múltiple, Sensibilidad a los olores, Intolerancia múltiple química
 description: |
-  We developed a virtual showcase for the softest bedding imaginable.
+  Síndrome químico múltiple, Sensibilidad a los olores, Intolerancia múltiple química
 tags:
-  - Design
-  - Dev
-  - Branding
+  - Síndrome
+  - Neurología
+  - Sensibilidad
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur posuere commodo venenatis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam non ligula vel metus efficitur hendrerit. In hac habitasse platea dictumst. Praesent et mauris ut mi dapibus semper. Curabitur tortor justo, efficitur sit amet pretium cursus, porta eget odio. Cras ac venenatis dolor. Donec laoreet posuere malesuada. Curabitur nec mi tempor, placerat leo sit amet, tincidunt est. Quisque pellentesque venenatis magna, eget tristique nibh pulvinar in. Vestibulum vitae volutpat arcu. Aenean ut malesuada odio, sit amet pellentesque odio. Suspendisse nunc elit, blandit nec hendrerit non, aliquet at magna. Donec id leo ut nulla sagittis sodales.
+### Resumen
 
-Integer vitae nibh elit. Suspendisse eget urna eu neque bibendum pharetra. Sed interdum lectus sem, in pulvinar magna dignissim vel. Quisque maximus at urna nec laoreet. Suspendisse potenti. Vestibulum rhoncus sem ut mi pellentesque, in vestibulum erat blandit. Aliquam sodales dui ac maximus consectetur. Duis quis est vehicula, imperdiet nisl nec, fermentum erat. Duis tortor diam, pharetra eu euismod in, vehicula non eros. Curabitur facilisis dui at erat ultrices gravida. In at nunc ultricies, pulvinar mi vel, sagittis mauris. Praesent pharetra posuere purus ac imperdiet. Nulla facilisi.
+##### Introducción:
+El Síndrome Químico Múltiple (SQM) se caracteriza por una pérdida de tolerancia a la presencia de diferentes agentes químicos en el medio ambiente que produce síntomas multisistémicos con diferentes grados de afectación y repercusión en la vida diaria de las personas que lo sufren.
 
-Sed pulvinar porttitor mi in ultricies. Etiam non dolor gravida eros pulvinar pellentesque et dictum ex. Proin eu ornare ligula, sed condimentum dui. Vivamus tincidunt tellus mi, sed semper ipsum pharetra a. Suspendisse sollicitudin at sapien nec volutpat. Etiam justo urna, laoreet ac lacus sed, ultricies facilisis dolor. Integer posuere, metus vel viverra gravida, risus elit ornare magna, id feugiat erat risus ullamcorper libero. Proin vitae diam auctor, laoreet lorem vitae, varius tellus.
+##### Caso Clínico: 
+Mujer de 46 años, sin hábitos tóxicos ni antecedentes patológicos personales o familiares de alergia o asma. Trabajó durante 5 años en oficina mal ventilada donde se realizó una fumigación mal controlada. En consulta de Neumología pues desde hace 2 años ha comenzado a presentar falta de aire inicialmente nocturna acompañado de tos, disfonía y sensación de opresión torácica. Los síntomas han aumentado y actualmente se presentan ante la presencia de humo de tabaco, detergentes, ambientadores, olores fuertes, productos de limpieza, al entrar en estacionamientos, etcétera. Ante las exposiciones los síntomas son inmediatos y casi siempre los mismos independientemente del desencadenante; ceden en unos 30 minutos tras alejarse del desencadenante aunque la tos y disfonía persisten varias horas e incluso todo el día. 
 
-Mauris sed eros in ex maximus volutpat. Suspendisse potenti. Donec lacinia justo consectetur sagittis tempor. Proin ullamcorper nisi vitae auctor rhoncus. Sed tristique aliquam augue. Pellentesque vitae fringilla ligula. Nulla arcu elit, efficitur eu nunc malesuada, eleifend tincidunt orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer mattis orci in bibendum ultricies. Quisque a dui erat. Phasellus et vulputate ipsum. Proin metus ex, lobortis nec ornare eget, bibendum ut sapien. Aliquam in dolor lobortis, aliquam tellus a, congue augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+También nota piel seca, prurito, debilidad muscular, rampas frecuentes, irritación y picor en los ojos, cefaleas, dificultad en la concentración y lentitud de pensamiento para realizar su trabajo.
 
-Aenean pretium purus augue, ut bibendum erat convallis quis. Cras condimentum quis velit ac mollis. Suspendisse non purus fringilla, venenatis nisl porta, finibus odio. Curabitur aliquet metus faucibus libero interdum euismod. Morbi sed magna nisl. Morbi odio nibh, facilisis vel sapien eu, tempus tincidunt erat. Nullam erat velit, sagittis at purus quis, tristique scelerisque tortor. Pellentesque lacinia tortor id est aliquam viverra. Vestibulum et diam ac ipsum mollis fringilla.
+##### Conclusión: 
+Esta entidad constituye un nuevo reto para el personal sanitario y sobre todo para el profesional que se dedique a la Evaluación y Peritaje de las Incapacidades pues produce a quien la padece diferentes grados de limitaciones y carece de exploraciones diagnósticas específicas.
+
+<a href="https://previous.revmexneurociencia.com/wp-content/uploads/2017/07/RevMexNeuroci_2017_184-70-79-RC.pdf" target="_blank">Ver publicación</a>

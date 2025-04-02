@@ -30,22 +30,22 @@ const projects = (await getCollection('work'))
 		<div class="wrapper stack gap-8 lg:gap-20">
 			<header class="hero">
 				<Hero
-					title="Hello, my name is Jeanine White"
-					tagline="I am a Creative Developer who is currently based in Portland, Oregon."
+					title="Dr. Erduy Jesús Infante Velázquez"
+					tagline="Especialista en Neurología, Master en peritaje médico y Valoración del daño corporal."
 					align="start"
 				>
 					<div class="roles">
-						<Pill><Icon icon="code" size="1.33em" /> Developer</Pill>
-						<Pill><Icon icon="microphone-stage" size="1.33em" /> Speaker</Pill>
-						<Pill><Icon icon="pencil-line" size="1.33em" /> Writer</Pill>
+						<Pill><Icon icon="brain" size="1.33em" /> Neurólogo</Pill>
+						<Pill><Icon icon="switcase-medical" size="1.33em" /> Peritaje médico</Pill>
+						<Pill><Icon icon="stethoscope" size="1.33em" /> Segunda opinión</Pill>
 					</div>
 				</Hero>
 
 				<img
-					alt="Jeanine White smiling in a red plaid shirt and tortoise shell glasses"
+					alt="Dr. Erduy Jesús Infante Velázquez"
 					width="480"
 					height="620"
-					src="/assets/portrait.jpg"
+					src="/assets/profile_erduy.jpg"
 				/>
 			</header>
 
@@ -55,8 +55,8 @@ const projects = (await getCollection('work'))
 		<main class="wrapper stack gap-20 lg:gap-48">
 			<section class="section with-background with-cta">
 				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Selected Work</h3>
-					<p>Take a look below at some of my featured work for clients from the past few years.</p>
+					<h3>Publicaciones</h3>
+					<p>Algunos de mis trabajos más importantes.</p>
 				</header>
 
 				<div class="gallery">
@@ -144,6 +144,7 @@ const projects = (await getCollection('work'))
 			aspect-ratio: 3 / 4;
 			border-radius: 4.5rem;
 			object-fit: cover;
+			border: .3rem solid var(--accent-regular);
 		}
 	}
 
