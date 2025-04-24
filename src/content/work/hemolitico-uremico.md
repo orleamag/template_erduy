@@ -6,15 +6,17 @@ img_alt: Aspectos epidemiológicos y patogénicos.
 description: |
   Aspectos epidemiológicos y patogénicos.
 tags:
-  - Urémico
-  - Epidemiológico
+  - SHU
+  - Epidemiología
 ---
+
+<a href="/Publications/Síndrome Hemolítico Urémico..pdf" target="_blank" >Ver publicación</a>
 
 ## Resumen
 
 Se hace una revisión de los aspectos actuales en relación con la epidemiología y patogenia del síndrome hermolítico urémico. El síndrome hemolítico urémico es el resultado de la acción de numerosos factores etiológicos y patogénicos. Se han aislado varias cepas de Escherichia coli productoras de una citotoxina para células vero, denominada verotoxina o toxina shiga-like (SL-T), esta toxina, específicamente la producida por la Escherichia coli serotipo O157: H7 ha sido relacionada con casos esporádicos y epidémicos y con menor frecuencia O111, O26 y O113, actúan mediante la liberación de exotoxinas a la circulación sanguínea. El primer fenómeno en la patogénesis del síndrome hemolítico urémico es la lesión del endotelio vascular que de manera secundaria genera una cascada de fenómenos tales como la adhesión, agregación plaquetaria y el depósito de fibrina mediante distintos mediadores, cuyo resultado final sería la formación de trombos en la microcirculación: la microangiopatía trombótica.
 
-### Introducción
+<!-- ### Introducción
 
 En 1958 fue aclarada su anatomía patológica y Habib2 lo designó como microangiopatía trombótica. En 1964, en Argentina, Gianantonio y otros3 describieron los aspectos clínicos, su evolución y tratamiento de la fase aguda.
 
@@ -22,4 +24,4 @@ Las teorías patogénicas que se han propuesto para explicar el SHU han sido mú
 
 El SHU afecta preferentemente a lactantes y niños menores de 5 años, y es mucho menos frecuente en adultos, aspecto éste que nos motivó a realizar esta revisión bibliográfica, para profundizar acerca de los nuevos conceptos sobre la forma del SHU asociada con diarrea que es la más frecuente en la edad pediátrica, aunque haremos referencia a sus otras variantes o formas atípicas.
 
-<a href="/Publications/Síndrome Hemolítico Urémico..pdf" target="_blank" >Ver publicación</a>
+<a href="/Publications/Síndrome Hemolítico Urémico..pdf" target="_blank" >Ver publicación</a> -->

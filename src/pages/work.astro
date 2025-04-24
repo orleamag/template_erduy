@@ -14,14 +14,14 @@ const projects = (await getCollection('work')).sort(
 ---
 
 <BaseLayout
-	title="My Work | Jeanine White"
-	description="Learn about Jeanine White's most recent projects"
+	title="Publicaciones | Dr. Erduy J. Infante Velázquez"
+	description="Neurólogo y Médico General, Dr. Erduy J. Infante Velázquez"
 >
 	<div class="stack gap-20">
 		<main class="wrapper stack gap-8">
 			<Hero
 				title="Publicaciones"
-				tagline="Un vistazo a las publicaciones más relevantes realizadas"
+				tagline="Mis publicaciones más relevantes"
 				align="start"
 			/>
 			<Grid variant="offset">
@@ -34,6 +34,6 @@ const projects = (await getCollection('work')).sort(
 				}
 			</Grid>
 		</main>
-		<!-- <ContactCTA /> -->
+		<ContactCTA />
 	</div>
 </BaseLayout>

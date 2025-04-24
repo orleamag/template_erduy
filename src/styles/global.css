@@ -182,6 +182,11 @@ h4 {
 h5 {
 	font-size: var(--text-xl);
 }
+.subtitle {
+	font-size: var(--text-md);
+	color: var(--gray-400);
+	font-weight: 900;
+}
 
 /* Utilities */
 

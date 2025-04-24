@@ -31,13 +31,13 @@ const projects = (await getCollection('work'))
 			<header class="hero">
 				<Hero
 					title="Dr. Erduy Jesús Infante Velázquez"
-					tagline="Especialista en Neurología, Master en peritaje médico y Valoración del daño corporal."
+					tagline="Especialista en Neurología. Especialización en Neuromuscular y Parkinson."
 					align="start"
 				>
 					<div class="roles">
 						<Pill><Icon icon="brain" size="1.33em" /> Neurólogo</Pill>
-						<Pill><Icon icon="switcase-medical" size="1.33em" /> Peritaje médico</Pill>
 						<Pill><Icon icon="stethoscope" size="1.33em" /> Segunda opinión</Pill>
+						<Pill><Icon icon="switcase-medical" size="1.33em" /> Medicina General</Pill>
 					</div>
 				</Hero>
 
@@ -81,17 +81,16 @@ const projects = (await getCollection('work'))
 
 			<section class="section with-background bg-variant">
 				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Mentions</h3>
+					<h3>Congresos</h3>
 					<p>
-						I have been fortunate enough to receive praise for my work in several publications. Take
-						a look below to learn more.
+						He tenido el privilegio de participar en congresos internacionales y nacionales, donde he podido compartir mis conocimientos y aprender de otros expertos en el campo de la neurología.
 					</p>
 				</header>
 
 				<div class="gallery">
 					<Grid variant="small">
 						{
-							['Medium', 'BuzzFeed', 'The Next Web', 'awwwards.', 'TechCrunch'].map((brand) => (
+							['IV Conferencia Internacional de Psicología de la Salud. Noviembre del 2004.','VIII Congreso Cubano de Neurocirugía. Noviembre del 2006', 'III Encuentro Internacional sobre Enfermedades Visuales y Neuro-musculares. Febrero del 2006.', 'XVII Forum de Ciencia y Técnica. Agosto del 2007.', 'Jornada de ELA. Barcelona. Junio del 2007.', 'International Congress of Medicine for Everyday Practice. Barcelona. Abril del 2010.'].map((brand) => (
 								<li class="mention-card">
 									<p>{brand}</p>
 								</li>
@@ -102,7 +101,7 @@ const projects = (await getCollection('work'))
 			</section>
 		</main>
 
-		<!-- <ContactCTA /> -->
+		<ContactCTA />
 	</div>
 </BaseLayout>
 
@@ -235,6 +234,7 @@ const projects = (await getCollection('work'))
 		display: flex;
 		height: 7rem;
 		justify-content: center;
+		padding: .5rem;
 		align-items: center;
 		text-align: center;
 		border: 1px solid var(--gray-800);
@@ -247,6 +247,7 @@ const projects = (await getCollection('work'))
 	@media (min-width: 50em) {
 		.mention-card {
 			border-radius: 1.5rem;
+			padding: .5rem;
 			height: 9.5rem;
 		}
 	}

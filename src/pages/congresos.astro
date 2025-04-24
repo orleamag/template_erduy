@@ -1,0 +1,34 @@
+---
+import congres from '../../.astro/congres.json'
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+
+---
+
+<BaseLayout
+	title="Congresos | Dr. Erduy J. Infante Velázquez"
+	description="Congresos internacionales y nacionales"
+>
+    <div class="stack gap-20">
+		<main class="wrapper stack gap-8">
+            <Hero
+                title="Congresos"
+                tagline="He participado en congresos Nacionales e Internacionales."
+                align="start"
+            />
+
+            <ul class="stack gap-8">
+                {congres.map((item) => (
+                  <li class="stack">
+                    <h5>{item.title}</h5>
+                    <p class="subtitle">{item.subtitle}</p>
+                    <p><strong>Fecha: </strong>{item.date}</p>
+                  </li>
+                ))}
+              </ul>
+		</main>
+		<ContactCTA />
+	</div>
+            
+</BaseLayout>
