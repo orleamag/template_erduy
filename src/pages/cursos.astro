@@ -1,0 +1,34 @@
+---
+import cursos from '../../.astro/cursos.json'
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+
+---
+
+<BaseLayout
+	title="Cursos | Dr. Erduy J. Infante Velázquez"
+	description="Cursos realizados a lo largo de mi carrera profesional"
+>
+    <div class="stack gap-20">
+		<main class="wrapper stack gap-8">
+            <Hero
+                title="Cursos"
+                tagline="He realizado cursos de especialización y actualización en Neurología."
+                align="start"
+            />
+
+            <ul class="stack gap-8">
+                {cursos.map((item) => (
+                  <li class="stack">
+                    <h5>{item.title}</h5>
+                    <p class="subtitle">{item.subtitle}</p>
+                    <p><strong>Fecha: </strong>{item.date}</p>
+                  </li>
+                ))}
+              </ul>
+		</main>
+		<ContactCTA />
+	</div>
+            
+</BaseLayout>
