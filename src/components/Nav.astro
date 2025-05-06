@@ -2,14 +2,15 @@
 import Icon from './Icon.astro';
 import ThemeToggle from './ThemeToggle.astro';
 import type { iconPaths } from './IconPaths';
+import { translations } from '../i18n/translation.js';
 
 /** Main menu items */
 const textLinks: { label: string; href: string }[] = [
-	{ label: 'Inicio', href: '/' },
-	{ label: 'Publicaciones', href: '/work/' },
-	{ label: 'Congresos', href: '/congresos/' },
-	{ label: 'Cursos', href: '/cursos/' },
-	{ label: 'Contacto', href: '/about/' },
+	{ label: translations.es.nav.home, href: '/' },
+	{ label: translations.es.nav.publications, href: '/work/' },
+	{ label: translations.es.nav.congresses, href: '/congresos/' },
+	{ label: translations.es.nav.courses, href: '/cursos/' },
+	{ label: translations.es.nav.contact, href: '/about/' },
 ];
 
 /** Icon links to social media — edit these with links to your profiles! */
