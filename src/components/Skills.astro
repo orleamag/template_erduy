@@ -1,22 +1,36 @@
 ---
 import Icon from './Icon.astro';
+
+import { translations } from '../i18n/translation.js';
+// Define las rutas dinámicas
+export async function getStaticPaths() {
+  return [
+    { params: { lang: 'es' } },
+    { params: { lang: 'en' } },
+  ];
+}
+
+const supportedLangs = ['en', 'es']; // Idiomas soportados
+const lang = supportedLangs.includes(Astro.params.lang) ? Astro.params.lang : 'es'; // Fallback al español
+const t = translations[lang];
 ---
+
 
 <section class="box skills">
 	<div class="stack gap-2 lg:gap-4">
 		<Icon icon="baby" color="var(--accent-regular)" size="2.5rem" gradient />
-		<h2>Medicina General y Pediatría</h2>
-		<p>Consultas de Medicina General y Pediatría por Mutuas de Salud y pacientes privados que no cuenten con seguros de salud.</p>
+		<h2>{t.skills.h2.medicine}</h2>
+		<p>{t.skills.p.medicine}</p>
 	</div>
 	<div class="stack gap-2 lg:gap-4">
 		<Icon icon="brain" color="var(--accent-regular)" size="2.5rem" gradient />
-		<h2>Neurología y Neuropediatría</h2>
-		<p>Se atienden enfermedades como Epilepsia, Cefaleas, Parkinson, Demencias, Dolor crónico de cualquier causa, Enfermedades raquimedulares y Neuromusculares entre otras.</p>
+		<h2>{t.skills.h2.neurology}</h2>
+		<p>{t.skills.p.neurology}</p>
 	</div>
 	<div class="stack gap-2 lg:gap-4">
 		<Icon icon="stethoscope" color="var(--accent-regular)" size="2.5rem" gradient />
-		<h2>Segunda Opinión Médica</h2>
-		<p>Se trata de una consulta no presencial, deberás adjuntar el máximo de información que tengas sobre tu enfermedad para que me sirva de ayuda al emitirte mi diagnóstico.</p>
+		<h2>{t.skills.h2.second}</h2>
+		<p>{t.skills.p.second}</p>
 	</div>
 </section>
 

@@ -1,0 +1,24 @@
+---
+import { translations } from '../../i18n/translation.js';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+// Define las rutas dinámicas
+export async function getStaticPaths() {
+  return [
+    { params: { lang: 'es' } },
+    { params: { lang: 'en' } },
+  ];
+}
+
+
+const lang = Astro.url.pathname.startsWith('/es') ? 'es' : 'en'; // Detecta el idioma dinámicamente
+const t = translations[lang]; 
+---
+
+<BaseLayout lang={lang}>
+  <section>
+    <h1>{t.error.title}</h1>
+    <p>{t.error.message}</p>
+    <a href={`/${lang}/`}>{t.nav.home}</a>
+  </section>
+</BaseLayout>

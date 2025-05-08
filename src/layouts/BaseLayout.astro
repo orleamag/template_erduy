@@ -3,9 +3,21 @@
 // https://docs.astro.build/en/core-concepts/layouts/
 
 // Component Imports
+import { translations } from '../i18n/translation.js';
 import MainHead from '../components/MainHead.astro';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
+
+// Define las rutas dinámicas
+export async function getStaticPaths() {
+  return [
+    { params: { lang: 'es' } },
+    { params: { lang: 'en' } },
+  ];
+}
+
+const lang = Astro.url.pathname.startsWith('/es') ? 'es' : 'en'; // Detecta el idioma dinámicamente
+const t = translations[lang]; 
 
 interface Props {
 	title?: string | undefined;
@@ -15,15 +27,15 @@ interface Props {
 const { title, description } = Astro.props;
 ---
 
-<html lang="en">
+<html lang={lang}>
 	<head>
-		<MainHead title={title} description={description} />
+		<MainHead lang={lang} title={title} description={description}/>
 	</head>
 	<body>
 		<div class="stack backgrounds">
-			<Nav />
+			<Nav lang={lang} t={t.nav}/>
 			<slot />
-			<Footer />
+			<Footer lang={lang}/>
 		</div>
 
 		<script>

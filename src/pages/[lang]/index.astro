@@ -1,6 +1,5 @@
 ---
 import { getCollection } from 'astro:content';
-import { useTranslations, useLanguageSwitch } from 'astro-i18next';
 import { translations } from '../../i18n/translation.js';
 
 // Layout import — provides basic page elements: <head>, <nav>, <footer> etc.
@@ -14,9 +13,22 @@ import Icon from '../../components/Icon.astro';
 import Pill from '../../components/Pill.astro';
 import PortfolioPreview from '../../components/PortfolioPreview.astro';
 
+// Define las rutas dinámicas
+export async function getStaticPaths() {
+  return [
+    { params: { lang: 'es' } },
+    { params: { lang: 'en' } },
+  ];
+}
+
+const lang = Astro.url.pathname.startsWith('/es') ? 'es' : 'en'; // Detecta el idioma dinámicamente
+const t = translations[lang]; 
+
+
 // Page section components
 import ContactCTA from '../../components/ContactCTA.astro';
 import Skills from '../../components/Skills.astro';
+
 
 // Content Fetching: List four most recent work projects
 const projects = (await getCollection('work'))
@@ -27,19 +39,18 @@ const projects = (await getCollection('work'))
 // https://docs.astro.build/basics/astro-components/
 ---
 
-<BaseLayout>
+<BaseLayout lang={lang}>
 	<div class="stack gap-20 lg:gap-48">
 		<div class="wrapper stack gap-8 lg:gap-20">
 			<header class="hero">
 				<Hero
-					title={translations.en.heroTitle}
-					tagline={translations.en.heroTagline}
+					t={t.hero}
 					align="start"
 				>
 					<div class="roles">
-						<Pill><Icon icon="brain" size="1.33em" /> Neurólogo</Pill>
-						<Pill><Icon icon="stethoscope" size="1.33em" /> Segunda opinión</Pill>
-						<Pill><Icon icon="switcase-medical" size="1.33em" /> Medicina General</Pill>
+						<Pill><Icon icon="brain" size="1.33em" /> {t.pill.neuro}</Pill>
+						<Pill><Icon icon="stethoscope" size="1.33em" /> {t.pill.second}</Pill>
+						<Pill><Icon icon="switcase-medical" size="1.33em" /> {t.pill.medicine}</Pill>
 					</div>
 				</Hero>
 
@@ -57,8 +68,8 @@ const projects = (await getCollection('work'))
 		<main class="wrapper stack gap-20 lg:gap-48">
 			<section class="section with-background with-cta">
 				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Publicaciones</h3>
-					<p>Algunos de mis trabajos más importantes.</p>
+					<h3>{t.publi.title}</h3>
+					<p>{t.publi.tagline}</p>
 				</header>
 
 				<div class="gallery">
@@ -83,16 +94,14 @@ const projects = (await getCollection('work'))
 
 			<section class="section with-background bg-variant">
 				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Congresos</h3>
-					<p>
-						He tenido el privilegio de participar en congresos internacionales y nacionales, donde he podido compartir mis conocimientos y aprender de otros expertos en el campo de la neurología.
-					</p>
+					<h3>{t.congress.home.title}</h3>
+					<p>{t.congress.home.resume}</p>
 				</header>
 
 				<div class="gallery">
 					<Grid variant="small">
 						{
-							['IV Conferencia Internacional de Psicología de la Salud. Noviembre del 2004.','VIII Congreso Cubano de Neurocirugía. Noviembre del 2006', 'III Encuentro Internacional sobre Enfermedades Visuales y Neuro-musculares. Febrero del 2006.', 'XVII Forum de Ciencia y Técnica. Agosto del 2007.', 'Jornada de ELA. Barcelona. Junio del 2007.', 'International Congress of Medicine for Everyday Practice. Barcelona. Abril del 2010.'].map((brand) => (
+							[t.brand.first,t.brand.second,t.brand.third,t.brand.four,t.brand.five,t.brand.six].map((brand) => (
 								<li class="mention-card">
 									<p>{brand}</p>
 								</li>

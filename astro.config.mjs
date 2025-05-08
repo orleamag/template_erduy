@@ -1,6 +1,9 @@
 import { defineConfig } from 'astro/config';
-import i18next from 'astro-i18next';
 
 export default defineConfig({
-  integrations: [i18next()],
+  site: 'https://example.com', // Cambia esto por tu dominio
+  trailingSlash: 'always', // Asegura que las rutas tengan una barra al final
+  build: {
+    outDir: 'dist', // Directorio de salida
+  },
 });

@@ -1,8 +1,21 @@
 ---
-import cursos from '../../.astro/cursos.json'
-import BaseLayout from '../layouts/BaseLayout.astro';
-import ContactCTA from '../components/ContactCTA.astro';
-import Hero from '../components/Hero.astro';
+import cursos from '../../../.astro/cursos.json';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ContactCTA from '../../components/ContactCTA.astro';
+import Hero from '../../components/Hero.astro';
+
+import { translations } from '../../i18n/translation.js';
+// Define las rutas dinámicas
+export async function getStaticPaths() {
+  return [
+    { params: { lang: 'es' } },
+    { params: { lang: 'en' } },
+  ];
+}
+
+const supportedLangs = ['en', 'es']; // Idiomas soportados
+const lang = supportedLangs.includes(Astro.params.lang) ? Astro.params.lang : 'es'; // Fallback al español
+const t = translations[lang];
 
 ---
 
@@ -13,8 +26,7 @@ import Hero from '../components/Hero.astro';
     <div class="stack gap-20">
 		<main class="wrapper stack gap-8">
             <Hero
-                title="Cursos"
-                tagline="He realizado cursos de especialización y actualización en Neurología."
+                t={t.course}
                 align="start"
             />
 

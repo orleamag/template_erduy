@@ -1,6 +1,19 @@
 ---
 import type { CollectionEntry } from 'astro:content';
 
+import { translations } from '../i18n/translation.js';
+// Define las rutas dinámicas
+export async function getStaticPaths() {
+  return [
+    { params: { lang: 'es' } },
+    { params: { lang: 'en' } },
+  ];
+}
+
+const supportedLangs = ['en', 'es']; // Idiomas soportados
+const lang = supportedLangs.includes(Astro.params.lang) ? Astro.params.lang : 'es'; // Fallback al español
+const t = translations[lang];
+
 interface Props {
 	project: CollectionEntry<'work'>;
 }

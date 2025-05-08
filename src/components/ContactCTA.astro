@@ -1,12 +1,26 @@
 ---
 import CallToAction from './CallToAction.astro';
 import Icon from './Icon.astro';
+
+import { translations } from '../i18n/translation.js';
+// Define las rutas dinámicas
+export async function getStaticPaths() {
+  return [
+    { params: { lang: 'es' } },
+    { params: { lang: 'en' } },
+  ];
+}
+
+
+const supportedLangs = ['en', 'es']; // Idiomas soportados
+const lang = supportedLangs.includes(Astro.params.lang) ? Astro.params.lang : 'es'; // Fallback al español
+const t = translations[lang];
 ---
 
 <aside>
-	<h2>Estás interesado en tener una cita?</h2>
+	<h2>{t.cta.index.quote}</h2>
 	<CallToAction href="mailto:erduyji@yahoo.es">
-		Escríbeme, te responderé en breve.
+		{t.cta.index.cta}
 		<Icon icon="paper-plane-tilt" size="1.2em" />
 	</CallToAction>
 </aside>
